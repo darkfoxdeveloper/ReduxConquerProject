@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+  <session-factory name="NHibernateProject">
+    <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
+    <property name="connection.connection_string">
+      Database=redux;Data Source=localhost;User Id=root;Password=co222323;Port=33060
+    </property>
+    <property name="dialect">NHibernate.Dialect.MySQLDialect</property>
+  </session-factory>
+</hibernate-configuration>

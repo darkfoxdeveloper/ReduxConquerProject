@@ -1,0 +1,104 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Database\Mappings\DbAccount.hbm.xml" />
+    <None Remove="Database\Mappings\DbAssociate.hbm.xml" />
+    <None Remove="Database\Mappings\DbbugReport.hbm.xml" />
+    <None Remove="Database\Mappings\DbCharacter.hbm.xml" />
+    <None Remove="Database\Mappings\DbChatLog.hbm.xml" />
+    <None Remove="Database\Mappings\DbDropRule.hbm.xml" />
+    <None Remove="Database\Mappings\DbEvents.hbm.xml" />
+    <None Remove="Database\Mappings\DbGuild.hbm.xml" />
+    <None Remove="Database\Mappings\DbGuildAttr.hbm.xml" />
+    <None Remove="Database\Mappings\DbItem.hbm.xml" />
+    <None Remove="Database\Mappings\DbItemAddition.hbm.xml" />
+    <None Remove="Database\Mappings\DbItemInfo.hbm.xml" />
+    <None Remove="Database\Mappings\DbItemLog.hbm.xml" />
+    <None Remove="Database\Mappings\DbLevExp.hbm.xml" />
+    <None Remove="Database\Mappings\DbMagicType.hbm.xml" />
+    <None Remove="Database\Mappings\DbMap.hbm.xml" />
+    <None Remove="Database\Mappings\DbMineDrop.hbm.xml" />
+    <None Remove="Database\Mappings\DbMonstertype.hbm.xml" />
+    <None Remove="Database\Mappings\DbNobility.hbm.xml" />
+    <None Remove="Database\Mappings\DbNpc.hbm.xml" />
+    <None Remove="Database\Mappings\DbPassage.hbm.xml" />
+    <None Remove="Database\Mappings\DbPortal.hbm.xml" />
+    <None Remove="Database\Mappings\DbProficiency.hbm.xml" />
+    <None Remove="Database\Mappings\DbRebornPath.hbm.xml" />
+    <None Remove="Database\Mappings\DbShopItem.hbm.xml" />
+    <None Remove="Database\Mappings\DbSkill.hbm.xml" />
+    <None Remove="Database\Mappings\DbSob.hbm.xml" />
+    <None Remove="Database\Mappings\DbSpawn.hbm.xml" />
+    <None Remove="Database\Mappings\DbStat.hbm.xml" />
+    <None Remove="Database\Mappings\DbTask.hbm.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Database\Mappings\DbAccount.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbAssociate.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbbugReport.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbCharacter.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbChatLog.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbDropRule.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbEvents.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbGuild.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbGuildAttr.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbItem.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbItemAddition.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbItemInfo.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbItemLog.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbLevExp.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbMagicType.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbMap.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbMineDrop.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbMonstertype.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbNobility.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbNpc.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbPassage.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbPortal.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbProficiency.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbRebornPath.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbShopItem.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbSkill.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbSob.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbSpawn.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbStat.hbm.xml" />
+    <EmbeddedResource Include="Database\Mappings\DbTask.hbm.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+    <PackageReference Include="NHibernate" Version="5.4.6" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\Libs\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedOpenSsl">
+      <HintPath>..\Libs\ManagedOpenSsl.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlHandler">
+      <HintPath>..\Libs\MySqlHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\Libs\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp">
+      <HintPath>..\Libs\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="TinyMap">
+      <HintPath>..\Libs\TinyMap.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
