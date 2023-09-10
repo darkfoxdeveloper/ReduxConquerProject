@@ -1,2 +1,2 @@
 # ReduxConquerProject
-Aun no funcional con Linux pero ya esta migrado el proyecto a .Net 6
+Not working yet in .Net 6 because have errors with openssl and cryptography (Need migrate the code for login)
